@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- =============== link css =============== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <!-- =============== dashboard =============== -->
+      <div class="dashboard">
+        <!-- =============== header =============== -->
+        <header class="header">
+          <h4>Now Playing:</h4>
+          <h2>String 57th & 9th</h2>
+        </header>
+        <div class="cd">
+          <div
+            class="cd-thumb"
+            style="
+              background-image: url('https://avatar-ex-swe.nixcdn.com/playlist/2023/06/30/e/d/4/b/1688098103945_500.jpg');
+            "
+          ></div>
+        </div>
+        <div class="control">
+          <div class="btn btn-shuffer">
+            <i class="fa-solid fa-shuffle icon"></i>
+          </div>
+          <div class="btn btn-prev">
+            <i class="fa-solid fa-backward-step icon"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <i class="fa-solid fa-pause icon"></i>
+            <i class="fa-solid fa-play icon"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="fa-solid fa-forward-step icon"></i>
+          </div>
+          <div class="btn btn-repeat">
+            <i class="fa-solid fa-repeat icon"></i>
+          </div>
+        </div>
+        <input
+          type="range"
+          id="progress"
+          class="progress"
+          value="0"
+          step="1"
+          min="0"
+          max="100"
+        />
+        <audio src="" id="audio"></audio>
+      </div>
+
+      <!-- =============== playlist =============== -->
+      <div class="playlist"></div>
+    </div>
+
+    <!-- =============== link js =============== -->
+    <script src="script.js"></script>
+    <!-- =============== fontawesome =============== -->
+    <script
+      src="https://kit.fontawesome.com/2c09e8da10.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
